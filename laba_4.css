@@ -1,0 +1,56 @@
+.adapt{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: inherit;
+    background: transparent ;
+    border: 5px solid transparent;
+    position: absolute;
+    background: #111;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: translateY(-10%);
+
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    background: rgb(270, 200, 0);
+    transform: translateY(30%);
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transform: translateY(70%);
+
+}
+
+@media (max-width: 700px){
+	.adapt{
+		height: 1000px;
+		width: 100%;
+		display: flex;
+		align-items: top;
+		justify-content: center;
+		position: absolute;
+
+
+	}
+}
+
+@media (max-width: 700px) and (orientation: portrait){
+	.adapt{
+		height: 1000px;
+		width: 100%;
+		display: flex;
+		align-items: top;
+		justify-content: center;
+		position: absolute;
+	}
+}
